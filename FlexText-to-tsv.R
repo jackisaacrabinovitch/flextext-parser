@@ -60,7 +60,8 @@ DF.IL = tibble(IL.GUID = Interlinear.guid,
                IL.TITLE = Interlinear.title,
                IL.NUM = Interlinear.number,
                IL.PPS = Interlinear.paragraphs)
-write_tsv(DF.IL,paste0(ExportLocation,"dfil.txt"))
+dfil = DF.IL %>% select(IL.NUM,IL.TITLE)
+write_tsv(dfil,paste0(ExportLocation,"dfil.txt"))
 #Split each paragraph content Interlinear Text into individual paragraphs,
 #For each paragraph, find:
   #the GUID (provided by Flex),
