@@ -3,8 +3,8 @@ import json
 import time
 import math
 
-readfile = "/Users/jackirab/Desktop/Research/PNG/NewScrape/dictionarycorpus/smallcorpus.txt"
-writefile = "/Users/jackirab/Desktop/Research/PNG/NewScrape/dictionarycorpus/scratch.json"
+readfile = "read.txt"
+writefile = "write.txt"
 
 start = time.time()
 
